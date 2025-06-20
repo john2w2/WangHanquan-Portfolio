@@ -9,7 +9,7 @@
 <body>
   <header>
     <h1>Hanquan Wang</h1>
-    <p>Mechanical Engineering Student at the University of Washington | Robotics </p>
+    <p>Mechanical Engineering Student at the University of Washington | Autonomous Insect Robotics Lab </p>
     <nav>
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
@@ -22,8 +22,8 @@
   <section id="about">
     <h2>About Me</h2>
     <p>
-          Welcome to my personal website. My name is Hanquan Wang and you can call me John if you like. I'm currently pursuing my M.S. in Mechanical Engineering at the University of Washington. 
-          I obtained my B.S. degree at the UW in Mechanical Engineering with a concentration in Mechatronics. My passion lies in control systems and robotic manipulation—fields where I can blend mechanical design, software integration, 
+          Welcome to my personal website! My name is Hanquan Wang and you can call me John if you like. I'm currently pursuing M.S. in Mechanical Engineering in the Autonomous Insect Robotics Lab under supervision from Prof. Sawyer Fuller. 
+          I obtained B.S. degree at the UW in Mechanical Engineering with a concentration in Mechatronics. My passion lies in control systems and robotic manipulation—fields where I can blend mechanical design, software integration, 
           and precision control to build impactful engineering solutions. I am super intrigued on robot locomotion and bio-inspired adaptability. I am eager to learn from everyone and free feel to reach out using my email or LinkedIn 
           listed on the bottom of the page. 
 
@@ -33,15 +33,20 @@
   <section id="projects">
     <h2>Projects</h2>
     <div class="project">
-      <h3>Smart Robotic Arm for Construction</h3>
+      <h3>Smart Robotic Arm for Construction - UW 2025 Capstone</h3>
       <p>
-        Designed a three-joint robot using admittance control and AprilTag tracking to autonomously assist in beam placement.
+        Our Force-Controlled/Autonomous Robot system is designed to aid in lifting and precise positioning tasks through two control regimes. In Regime 1, the robot uses admittance control to respond to user-applied forces, 
+        allowing intuitive guidance during lifting and movement. Once the robot is near the target area, Regime 2 activates autonomous control, using April Tag detection via a camera to snap to the final desired position with high accuracy. 
+        The system includes auto-leveling and angular adjustments to ensure precise hole alignment with the target board, enabling efficient and accurate assembly or alignment tasks.
       </p>
     </div>
     <div class="project">
-      <h3>Superbike Swingarm Design</h3>
+      <h3>Self-balancing cart</h3>
       <p>
-        Led mechanical design using FEA and GD&T, built full rear swingarm based on Honda CBR600RR geometry.
+        I designed and built a real-time self-balancing cart system using an ESP32 microcontroller, dual DC motors with encoders, and an MPU6050 IMU. The project models a classic inverted pendulum, 
+        where I implemented a full-state feedback Linear Quadratic Regulator (LQR) to stabilize the system. I derived the physical model and discrete-time state-space representation from first principles, tuned the LQR using Python, 
+        and deployed it to embedded C++ code. The system uses encoder-based cart tracking and a complementary filter for angle estimation. Key challenges included tuning the controller to suppress oscillations and integrating noisy sensor data for reliable stabilization. 
+        This project demonstrates applied control theory, real-time embedded programming, and system modeling on hardware.
       </p>
     </div>
     <!-- Add more projects here -->
@@ -86,11 +91,6 @@
     My technical work focused on designing a novel electrode mask to improve filtration performance by 5% while lowering production cost. 
     I performed analytical calculations to fine-tune the design, achieving an estimated 80% filtration efficiency.</p>
 
-    <p><strong>Research Assistant — UW QUIVER Lab</strong><br>
-    In the QUIVER lab, I worked on improving robotic-assisted surgical systems. 
-    I designed and 3D-printed a housing for motor and vibrator components that improved the implantation process’s efficiency. 
-    I also developed a mobile UI using MIT App Inventor and integrated real-time data collection through Arduino programming. 
-    I completed this full prototype cycle—from design to testing—within a five-week timeline.</p>
   </section>
 
   <section id="awards">
