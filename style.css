@@ -120,3 +120,35 @@ footer {
 .intro-text {
   max-width: 600px;
 }
+
+.page-intro {
+  margin-bottom: 40px;
+}
+
+.research-entry {
+  background: white;
+  padding: 24px;
+  margin-bottom: 28px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.research-entry h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+.meta {
+  color: #4b5563;
+  margin-bottom: 14px;
+}
+
+.research-entry ul {
+  margin-top: 12px;
+  padding-left: 20px;
+}
+
+.research-entry li {
+  margin-bottom: 8px;
+}
