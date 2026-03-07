@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Research Experience </title>
+  <title>Research Experience</title>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
@@ -19,28 +19,132 @@
     </nav>
   </header>
 
+  <section class="page-intro">
+    <h2>Research Overview</h2>
+    <p>
+      My research interests lie at the intersection of robotics, control, and mechatronic system design, with a particular focus on robot locomotion, manipulation, and hardware-software integration. 
+      I am especially interested in bio-inspired robotic systems, autonomous sensing, and experimental platforms that bridge mechanical design with real-world performance.
+    </p>
+  </section>
+
   <section>
-    <h2>Research Projects</h2>
+    <h2>Research Experience</h2>
 
-    <p><strong>Research Engineer - NASA Cryogenic Vortex Generator (UW Applied Physics Laboratory)</strong><br>
-    At the UW Applied Physics Lab, I’m investigating vortex generator designs for cryogenic pipe systems under NASA funding. The goal is to improve thermal transfer by disrupting the Leidenfrost vapor barrier in cryogenic environments. I analyze various flow disruption geometries to balance reduced boil-off with minimal pressure drop, contributing to more efficient cryogen transfer line and rocket fuel systems.</p>
-    <p><strong>US Provisional Patent - "Systems for Vortex Generator Enhanced Heat Transfer"</strong><br>
-    Serial Number: 63/807,431</p>
-    
-    <p><strong>Research Assistant - UW Fluids Lab</strong><br>
-    In this lab, I developed a magnet-controlled particle releaser with eight compartments to support experimental studies of flow dynamics. I integrated camera and laser tracking to monitor over 125 experimental runs and processed velocity field data using MATLAB and PIVmat. My system allowed for controlled fluid releases, enabling precise Particle Image Velocimetry (PIV) analysis.</p>
+    <div class="research-entry">
+      <h3>Robot Locomotion and Sensing</h3>
+      <p class="meta"><strong>Lab:</strong> UW Autonomous Insect Robotics Lab<br>
+      <strong>PI:</strong> Dr. Sawyer Fuller</p>
 
-    <p><strong>Automated Single-Cell Printing - UW Allbritton Lab</strong><br>
-    I developed an automated calibration and motion-control system for a single-cell printing platform integrating a motorized Z-axis, XY microscope stage, and camera-based alignment. The goal was to transform a manual, operator-dependent spotting process into a repeatable and safe automated workflow. I built a Python (Tkinter) GUI to guide users through calibration, capturing critical parameters such as safe, in-well, and chip Z-heights, as well as stage positions for well and pen alignment. These values were validated, unit-consistent, and passed into a threaded automation sequence that coordinated multi-axis motion without blocking the user interface. The resulting system improved repeatability, reduced user error, and enabled reliable automated spotting with real-time status feedback and abort safety. This project strengthened my experience in laboratory robotics, hardware-software integration, calibration pipelines, and robust automation design.</p>
+      <p>
+        I am currently conducting research in the Autonomous Insect Robotics Lab at the University of Washington, where I work on bio-inspired robotic systems for locomotion and sensing. 
+        My work focuses on developing lightweight robotic platforms and exploring mechanisms that enable robust movement in constrained or difficult-to-access environments. 
+        This research combines mechanical design, actuation, system integration, and experimental validation to study how biologically inspired principles can improve robotic mobility and adaptability.
+      </p>
+      <p>
+        The 1.02 g hopping system. It consists of a coreless direct-
+        current (DC) motor that actuates in direct drive mode, using a pulley and
+        string to lift itself against a rigid tower. A laser-microfabricated carbon
+        fiber sarrus linkage constrains the motor to translational motion to minimize
+        rotation during the aerial phase. Retraction and self-righting is performed
+        by reversing the motor to pull on the retraction string on the same pulley.
+        A protective roll cage stabilizes orientation onto the foot. Separators on the
+        pulley between the two strings prevent entanglement.
+      </p>
+      <video width="600" autoplay loop muted playsinline controls>
+        <source src="videos/IROS_2026_DirectHop.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
 
-    <div class="image-row">
-      <img src="images/Dipping_system_CAD.jpg" alt="Dip System CAD">
-      <img src="images/Dipping_system.jpg" alt="Dip System Physical Setup">
+      <ul>
+        <li><strong>Research Focus:</strong> Bio-inspired locomotion, lightweight robotic systems, embedded sensing</li>
+        <li><strong>Methods:</strong> Mechanical design, prototyping, experimental characterization, control integration</li>
+        <li><strong>Current Direction:</strong> Robotic locomotion and adaptable sensing for small-scale robotic platforms</li>
+      </ul>
+    </div>
+
+    <div class="research-entry">
+      <h3>NASA Cryogenic Vortex Generator</h3>
+      <p class="meta"><strong>Lab:</strong> UW Applied Physics Laboratory<br>
+      <strong>PI:</strong> Dr. Fiona Spencer, Dr. Bob Breidenthal </p>
+
+      <p>
+        In this project, we investigated vortex generator designs for cryogenic pipe systems under NASA-supported research. 
+        The objective was to improve heat transfer by disrupting the Leidenfrost vapor barrier that forms along the walls of cryogenic transfer lines. 
+        My work involved analyzing different flow disruption geometries to balance enhanced heat transfer, reduced boil-off, and acceptable pressure losses. 
+        This project strengthened my experience in experimental thermal-fluid systems, design optimization, and applied transport phenomena.
+      </p>
+
+      <ul>
+        <li><strong>Project Area:</strong> Cryogenic heat transfer and flow control</li>
+        <li><strong>Research Focus:</strong> Vortex generator geometry, thermal transport, boil-off reduction</li>
+      </ul>
+    </div>
+
+    <div class="research-entry">
+      <h3>Automated Single-Cell Printing</h3>
+      <p class="meta"><strong>Lab:</strong> UW Allbritton Lab<br>
+      <strong>PI:</strong> Dr. Nancy Allbritton</p>
+
+      <p>
+        I developed an automated calibration and motion-control system for a single-cell printing platform integrating a motorized Z-axis, XY microscope stage, and camera-based alignment. 
+        The goal was to convert a manual, operator-dependent spotting process into a repeatable and safe automated workflow. 
+        I built a Python Tkinter graphical user interface to guide users through calibration, capture critical motion parameters, and validate user inputs before execution. 
+        These calibrated values were then passed into a threaded automation sequence that coordinated multi-axis motion while maintaining a responsive user interface. 
+        The resulting system improved repeatability, reduced operator error, and enabled reliable automated spotting with real-time feedback and abort safety.
+      </p>
+
+      <ul>
+        <li><strong>Project Area:</strong> Laboratory automation and precision mechatronics</li>
+        <li><strong>Research Focus:</strong> Calibration pipelines, motion control, camera-guided alignment</li>
+        <li><strong>Tools:</strong> Python, Tkinter, motion stages, microscope integration</li>
+      </ul>
+
+      <div class="image-row">
+        <img src="images/Dipping_system_CAD.jpg" alt="Single-cell printing CAD model">
+        <img src="images/Dipping_system.jpg" alt="Single-cell printing physical setup">
+      </div>
+    </div>
+
+    <div class="research-entry">
+      <h3>Fluid Flow Visualization</h3>
+      <p class="meta"><strong>Lab:</strong> DiBen Fluids Lab<br>
+      <strong>PI:</strong> Dr. Michelle DiBenedetto</p>
+
+      <p>
+        In the UW Fluids Lab, I developed a magnet-controlled particle releaser with eight compartments to support controlled experimental studies of flow dynamics. 
+        I integrated laser and camera tracking systems to monitor more than 125 experimental runs and processed the resulting velocity-field data using MATLAB and PIVmat. 
+        This work enabled precise Particle Image Velocimetry analysis and deepened my experience with experimental fluid mechanics, instrumentation, and quantitative data analysis.
+      </p>
+
+      <ul>
+        <li><strong>Project Area:</strong> Experimental fluid mechanics</li>
+        <li><strong>Research Focus:</strong> Flow visualization, PIV, controlled particle release systems</li>
+        <li><strong>Tools:</strong> MATLAB, PIVmat, camera tracking, laser-based measurement</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Publications, Patents, and Research Outputs</h2>
+
+    <div class="research-entry">
+      <h3>Patent</h3>
+      <p>
+        <strong>US Provisional Patent:</strong> “Systems for Vortex Generator Enhanced Heat Transfer”<br>
+        <strong>Serial Number:</strong> 63/807,431
+      </p>
+    </div>
+
+    <div class="research-entry">
+      <h3>Selected Papers / Manuscripts</h3>
+      <ul>
+        <li> A.Ala,  H.Wang, F.Spencer, G.Nino, R.Breidenthal, “Vortex  Generator System for Enhancing Heat Transfer in Cryogenic Pipelines,”  AIAA SciTech  , Orlando, FL, 2026, DOI:  10.2514/6.2026-2385. </li>
+      </ul>
     </div>
   </section>
 
   <footer>
-    <p>© 2025 Hanquan Wang. All rights reserved.</p>
+    <p>© 2026 Hanquan Wang. All rights reserved.</p>
   </footer>
 </body>
 </html>
