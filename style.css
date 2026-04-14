@@ -153,18 +153,14 @@ footer {
   margin-bottom: 8px;
 }
 
-html, body {
-  height: 100%;
-  margin: 0;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-}
-
 main {
   flex: 1;
+}
+
+section {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
 }
 
 footer {

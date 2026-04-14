@@ -19,41 +19,43 @@
     </nav>
   </header>
 
-  <section>
-    <div class="project">
-      <h3>Multi-Drone Collision Avoidance via LQR-MPC Supervisory Control</h3>
-      <p>
-        In this project, I developed a multi-drone collision avoidance framework that integrates a baseline Linear Quadratic Regulator (LQR) with a supervisory Model Predictive Control (MPC) layer to enable safe navigation in cluttered 3D environments. The system models nonlinear quadrotor dynamics, applies linearization for onboard control, and uses prediction-based optimization with control barrier function constraints to enforce inter-drone and obstacle avoidance while minimizing deviation from nominal trajectories . Through simulation in MATLAB using CVX, I implemented a hierarchical control architecture where LQR provides efficient trajectory tracking and MPC introduces safety-aware corrections only when constraints are violated. This project strengthened my understanding of optimal control, state estimation, and constrained optimization, while highlighting the importance of balancing model fidelity, computational efficiency, and real-time feasibility. It also reinforced how data-driven prediction of system dynamics can be leveraged to enforce safety guarantees in multi-agent robotic systems, a key principle I apply in designing autonomous and resource-constrained robots.
-      </p>
-      <video width="600" autoplay loop muted playsinline controls>
-        <source src="videos/3D_trajectory_cvx_mpc.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </div>
+  <main>
+    <section>
+      <div class="project">
+        <h3>Multi-Drone Collision Avoidance via LQR-MPC Supervisory Control</h3>
+        <p>
+          In this project, I developed a multi-drone collision avoidance framework that integrates a baseline Linear Quadratic Regulator (LQR) with a supervisory Model Predictive Control (MPC) layer to enable safe navigation in cluttered 3D environments. The system models nonlinear quadrotor dynamics, applies linearization for onboard control, and uses prediction-based optimization with control barrier function constraints to enforce inter-drone and obstacle avoidance while minimizing deviation from nominal trajectories . Through simulation in MATLAB using CVX, I implemented a hierarchical control architecture where LQR provides efficient trajectory tracking and MPC introduces safety-aware corrections only when constraints are violated. This project strengthened my understanding of optimal control, state estimation, and constrained optimization, while highlighting the importance of balancing model fidelity, computational efficiency, and real-time feasibility. It also reinforced how data-driven prediction of system dynamics can be leveraged to enforce safety guarantees in multi-agent robotic systems, a key principle I apply in designing autonomous and resource-constrained robots.
+        </p>
+        <video width="600" autoplay loop muted playsinline controls>
+          <source src="videos/3D_trajectory_cvx_mpc.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
 
-    <div class="project">
-      <h3>Smart Robotic Arm for Construction</h3>
-      <p>
-        The Force-Controlled/Autonomous Robot system is designed to aid in lifting and precise positioning tasks through two control regimes. In Regime 1, the robot uses admittance control to respond to user-applied forces, allowing intuitive guidance during lifting and movement. Once the robot is near the target area, Regime 2 activates autonomous control, using AprilTag detection via a camera to snap to the final desired position with high accuracy. The system includes auto-leveling and angular adjustments to ensure precise hole alignment with the target board, enabling efficient and accurate assembly or alignment tasks.
-      </p>
-      <video width="600" autoplay loop muted playsinline controls>
-        <source src="videos/construction_arm_silenced.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </div>
+      <div class="project">
+        <h3>Smart Robotic Arm for Construction</h3>
+        <p>
+          The Force-Controlled/Autonomous Robot system is designed to aid in lifting and precise positioning tasks through two control regimes. In Regime 1, the robot uses admittance control to respond to user-applied forces, allowing intuitive guidance during lifting and movement. Once the robot is near the target area, Regime 2 activates autonomous control, using AprilTag detection via a camera to snap to the final desired position with high accuracy. The system includes auto-leveling and angular adjustments to ensure precise hole alignment with the target board, enabling efficient and accurate assembly or alignment tasks.
+        </p>
+        <video width="600" autoplay loop muted playsinline controls>
+          <source src="videos/construction_arm_silenced.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
 
-    <div class="project">
-      <h3>Self-balancing Cart</h3>
-      <p>
-        We designed and built a real-time self-balancing cart system using an ESP32 microcontroller, dual DC motors with encoders, and an MPU6050 IMU. The project models a classic inverted pendulum, where I implemented a full-state feedback Linear Quadratic Regulator (LQR) to stabilize the system. I derived the physical model and discrete-time state-space representation from first principles, tuned the LQR using Python, and deployed it to embedded C++ code. The system uses encoder-based cart tracking and a complementary filter for angle estimation. Key challenges included tuning the controller to suppress oscillations and integrating noisy sensor data for reliable stabilization. This project demonstrates applied control theory, real-time embedded programming, and system modeling on hardware.
-      </p>
-      <video width="600" autoplay loop muted playsinline controls>
-        <source src="videos/self_balancing_cart_silenced_cut.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </div>
-  </section>
-
+      <div class="project">
+        <h3>Self-balancing Cart</h3>
+        <p>
+          We designed and built a real-time self-balancing cart system using an ESP32 microcontroller, dual DC motors with encoders, and an MPU6050 IMU. The project models a classic inverted pendulum, where I implemented a full-state feedback Linear Quadratic Regulator (LQR) to stabilize the system. I derived the physical model and discrete-time state-space representation from first principles, tuned the LQR using Python, and deployed it to embedded C++ code. The system uses encoder-based cart tracking and a complementary filter for angle estimation. Key challenges included tuning the controller to suppress oscillations and integrating noisy sensor data for reliable stabilization. This project demonstrates applied control theory, real-time embedded programming, and system modeling on hardware.
+        </p>
+        <video width="600" autoplay loop muted playsinline controls>
+          <source src="videos/self_balancing_cart_silenced_cut.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+  </main>
+  
   <footer>
     <p>© 2026 Hanquan Wang. All rights reserved.</p>
   </footer>
