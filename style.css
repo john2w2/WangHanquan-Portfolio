@@ -152,3 +152,24 @@ footer {
 .research-entry li {
   margin-bottom: 8px;
 }
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #0b1a2f;
+  color: white;
+}
